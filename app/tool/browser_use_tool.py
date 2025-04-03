@@ -170,7 +170,7 @@ class BrowserUseTool(BaseTool, Generic[Context]):
                     chrome_instance_path=config.browser.chrome_instance_path if config.browser else "",
                     wss_url=config.browser.wss_url if config.browser else "",
                     cdp_url=config.browser.cdp_url if config.browser else "",
-                    telemetry_enabled=browser_use_config["telemetry"]["enabled"]
+                    telemetry_enabled=False  # Explicitly disable telemetry
                 )
                 context_config = BrowserContextConfig(
                     proxy=config.browser.proxy if config.browser else None
