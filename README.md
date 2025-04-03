@@ -109,6 +109,12 @@ base_url = "https://api.openai.com/v1"
 api_key = "sk-..."  # Replace with your actual API key
 ```
 
+3. (Optional) To disable telemetry, create a `.env` file in the project root (you can copy from the example):
+
+```bash
+cp .env.example .env
+```
+
 ## Quick Start
 
 One line for run OpenManus:
